@@ -5,24 +5,611 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CWEF2021</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body class="index-page">
+    <nav>
+        <div class="container">
+            <a href="#!" class="logo">
+                <img src="assets/images/logo-cw-cwef-winter.svg" alt="">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a class="link" href="#!">關於CWEF</a></li>
+                <li><a class="link" href="#!">議題</a></li>
+                <li><a class="link" href="#!">議程下載</a></li>
+                <li><a class="link" href="#!">歷屆講者精華</a></li>
+                <li><a class="link" href="#!">演講精華</a></li>
+                <li><a class="link" href="#!">下載區</a></li>
+                <li><a class="link" href="#!">共同推動</a></li>
+                <li><a class="btn" href="#!">我要購票</a></li>
+            </ul>
+        </div>
+    </nav>      
     <section class="opening">
         <video class="embed-responsive-item" preload="auto" muted playsinline webkit-playsinline autoplay loop name="media" poster="assets/images/opening.png" src="assets/images/opening.mp4"></video>
         <div class="container">
             <div class="img">
                 <img src="assets/images/opening.svg" alt="">
-                <h1 class="mt-d-20 mt-m-10 mb0">coming soon</h1>
             </div>
-            <div class="text">
-                <h1 class="my0"><span class="h2">2021.</span> 1.19-1.20</h1>
-                <h2 class="mt5 mb0">台北君悅酒店</h2>
+            <div class="text mt30">
+                <h2 class="my0">2021. 1.19-1.20</h2>
+                <h2 class="my0">台北君悅酒店</h2>
+            </div>
+            <a class="btn mt40" href="#!">我要購票</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container container-md">
+            <div class="title ml-auto mr-auto mb-d-30 mb-m-20 serif">
+                <div class="zh font-weight-600">關於論壇</div>
+                <div class="en font-weight-500 ml10">ABOUT CWEF</div>
+            </div>
+            <div class="content text-d-center">
+                <p>
+                    2020 年，新冠疫病、中美對峙，卻讓台灣走出了歷史上的「新境界」。資金回流、外交開展，改寫了台灣退出聯合國50年來的孤絕，也挾帶著巨大風險。如何找出險局中的新治理、新策略？
+                </p>
+                <p>
+                    2021 年，疫後的新境界，必有「新競爭」。供應鏈必須重組，產業版塊搶佔；數位能力必須提昇，高科技人才爭搶；貧富差距必然擴大，社會資源搶奪…。
+                </p>
+                <p>
+                    如何兼顧看似對立、不相容的KPI？如何在不斷打掉重練的新賽局中，找到堅韌向前的力量？疫後新常態布建的全新賽局，數位科技是決勝的關鍵。5G、AIOT 物聯網、電動車、數位金融、智慧醫療、再生能源、服務業新樣態…，數據滲透在人與自然互動的每個界面。
+                </p>
+                <p>
+                    科技之外，還有哪些人、事、物的新視野、新關照？如何找出人類與病毒、自然和平相處的新生機？2021 年天下經濟論壇，用「新境・新競・科技+」為主軸，一同邀請您在此關鍵時刻共創未來。
+                </p>
             </div>
         </div>
     </section>
+    <section class="about-detail">
+        <div class="container container-md">
+            <div class="subtitle mb-d-30 mb-m-0 serif font-weight-600 text-center">
+                參與收穫
+            </div>
+            <div class="detail-group">
+                <div class="detail-item mt-m-20 mx-m-10 text-center">
+                    <div class="h4 font-weight-500 mt0 mb5">了解產業趨勢</div>
+                    <p class="my0">邀請亞洲產業意見領袖及專家，分享創業心法及成功方程式</p>
+                </div>
+                <div class="detail-item mt-m-20 mx-m-10 text-center">
+                    <div class="h4 font-weight-500 mt0 mb5">抓住新機會</div>
+                    <p class="my0">人工智慧、未來零售、工業4.0、未來城市等</p>
+                </div>
+                <div class="detail-item mt-m-20 mx-m-10 text-center">
+                    <div class="h4 font-weight-500 mt0 mb5">對話與交流</div>
+                    <p class="my0">聚焦亞洲企業，搭起對話平台，一同找尋方向</p>
+                </div>
+            </div>
+            <div class="subtitle mt60 mb-d-30 mb-m-0 serif font-weight-600 text-center">
+                誰是與會者
+            </div>
+            <div class="detail-group">
+                <div class="detail-item mt-m-20 mx-m-10 detail-item-sp text-center">
+                    <div class="h4 font-weight-500 mt0 mb5"><span>80</span>家</div>
+                    <p class="my0"><span>企業CEO或</span><span>高階主管</span></p>
+                </div>
+                <div class="detail-item mt-m-20 mx-m-10 detail-item-sp text-center">
+                    <div class="h4 font-weight-500 mt0 mb5"><span>100</span>位</div>
+                    <p class="my0">政府決策官員、經濟學家、趨勢專家</p>
+                </div>
+                <div class="detail-item mt-m-20 mx-m-10 detail-item-sp text-center">
+                    <div class="h4 font-weight-500 mt0 mb5"><span>300</span>位</div>
+                    <p class="my0"><span>產官學菁英</span><span>參與</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="agenda">
+        <section class="agenda agenda-1">
+            <div class="container container-md">
+                <div class="title ml-auto mr-auto mb20">
+                    <div class="h4 mb5">議題一</div>
+                    <div class="h3 font-weight-500">全球新境界─G2時代大展望</div>
+                </div>
+                <div class="content text-d-center">
+                    <p class="my0">
+                        貿易戰、科技戰、軍備戰，中美兩大陣營在全球爭搶聯盟。被時代大浪推向新境界的台灣將有哪些機遇與挑戰？台灣企業如何在全球重新佈局？如何分拆供應鏈避險？個人、企業如何培養不斷打掉重練的韌性？
+                    </p>
+                    <button class="btn mt20 mb-d-40 mb-m-20">
+                        <span>查看講者</span>
+                        <i class="icon icon-chevron-down"></i>
+                    </button>
+                    <img src="assets/images/opening.png" width="100%" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="agenda agenda-2">
+            <div class="container container-md container-col">
+                <div class="column column-txt">
+                    <div class="title mb20">
+                        <div class="h4 mb5">議題二</div>
+                        <div class="h3 font-weight-500">科技新境遇─5G應用大佈局</div>
+                    </div>
+                    <div class="content">
+                        <p class="my0">
+                            隨著5G正式開台，各式5G應用也陸續開展。對個人的生活來說，5G應用的成熟不僅改變日常，甚至改變社會；對企業的經營而言，如何在5G快速普及的過程中，搶先佈局更是當前要務。究竟，在這場沒有人可以置身事外的科技大潮中，有哪些重點須掌握？而新的變革又帶來哪些新機遇？
+                        </p>
+                        <button class="btn mt20 mb-d-40 mb-m-20">
+                            <span>查看講者</span>
+                            <i class="icon icon-chevron-down"></i>
+                        </button>
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="column column-img">
+                    <div class="img">
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="agenda agenda-3">
+            <div class="container container-md container-col container-col-twist">
+                <div class="column column-txt">
+                    <div class="title mb20">
+                        <div class="h4 mb5">議題三</div>
+                        <div class="h3 font-weight-500">運輸新境遇─典範轉移大進擊</div>
+                    </div>
+                    <div class="content">
+                        <p class="my0">
+                            10年內，電動車銷售將從百萬輛衝上數千萬輛，值此典範轉移的爆發時刻，閃電擴張出一票特斯拉供應鏈明星企業的台灣，已經做好往前一步的準備。究竟，在以電動車這個顛覆百年汽車產業為主的新賽道上，新加入的賽車手有何策略？老車手如何華麗轉身？而主責賽道規則的政府部門又對產業發展帶來哪些影響？
+                        </p>
+                        <button class="btn mt20 mb-d-40 mb-m-20">
+                            <span>查看講者</span>
+                            <i class="icon icon-chevron-down"></i>
+                        </button>
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="column column-img">
+                    <div class="img">
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="agenda agenda-4">
+            <div class="container container-md container-col container-twice">
+                <div class="column column-txt">
+                    <div class="title mb20">
+                        <div class="h4 mb5">議題四</div>
+                        <div class="h3 font-weight-500"><span>康健新境遇─</span><span>生醫創新的光與影</span></div>
+                    </div>
+                    <div class="content">
+                        <p class="my0 pb-d-20">
+                            疫後新境商機的最大爆發點就在生技與醫療，尤其人工智慧的進展，為醫療現場和生技製藥都帶來助力，但目前享譽國際的台灣健保制度，卻可能成為創新阻力。究竟，當前科技發展為醫療保健帶來哪些新想像？而台灣的健保制度與環境，對生醫的創新是推升或瓶頸？
+                        </p>
+                        <button class="btn mb-d-40 mb-m-20">
+                            <span>查看講者</span>
+                            <i class="icon icon-chevron-down"></i>
+                        </button>
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="column column-img">
+                    <div class="img">
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="agenda agenda-5">
+            <div class="container container-md">
+                <div class="title ml-auto mr-auto mb20">
+                    <div class="h4 mb5">議題五</div>
+                    <div class="h3 font-weight-500">城市新境界─打造永續未來城市</div>
+                </div>
+                <div class="content text-d-center">
+                    <p class="my0">
+                        疫疫後新境的城市治理，有了新的重點與樣貌。從防疫到復甦、設計到智慧，乃至對應聯合國17項永續發展目標（SDGs），引領居民迎向未來的城市治理者，在疫後開春的一年將有哪些新施政？而在全球各大都會無不積極打造永續城市的趨勢下，台灣的城市又有哪些永續願景？
+                    </p>
+                    <button class="btn mt20 mb-d-40 mb-m-20">
+                        <span>查看講者</span>
+                        <i class="icon icon-chevron-down"></i>
+                    </button>
+                    <img src="assets/images/opening.png" width="100%" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="agenda agenda-6">
+            <div class="container container-md container-col">
+                <div class="column column-txt">
+                    <div class="title mb20">
+                        <div class="h4 mb5">議題六</div>
+                        <div class="h3 font-weight-500">能源新境界─綠電大搶灘</div>
+                    </div>
+                    <div class="content">
+                        <p class="my0">
+                            因應地球氣候變遷，能源轉型已成國際社會主要共識，台灣為扭轉98%能源都靠進口的現況，正積極邁開能源轉型步伐。在太陽光電與離岸風電這兩大推動主力上，目前進度如何？相關業者又是如何看待這波綠電契機？
+                        </p>
+                        <button class="btn mt20 mb-d-40 mb-m-20">
+                            <span>查看講者</span>
+                            <i class="icon icon-chevron-down"></i>
+                        </button>
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="column column-img">
+                    <div class="img">
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="agenda agenda-7">
+            <div class="container container-md container-col container-col-twist">
+                <div class="column column-txt">
+                    <div class="title mb20">
+                        <div class="h4 mb5">議題七</div>
+                        <div class="h3 font-weight-500">打開新境界─奔馳世界舞台</div>
+                    </div>
+                    <div class="content">
+                        <p class="my0">
+                            疫後新境的新常態，是國家與個人更隔絕封閉，但此時的企業尤需靠「打開」突圍。儘管疫情改變過往營運與銷售思惟，但在強大產品力與服務力的支撐下，開始有台灣企業跳出框架，用積極走出去成就企業的第二成長曲線。
+                        </p>
+                        <button class="btn mt20 mb-d-40 mb-m-20">
+                            <span>查看講者</span>
+                            <i class="icon icon-chevron-down"></i>
+                        </button>
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="column column-img">
+                    <div class="img">
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="agenda agenda-8">
+            <div class="container container-md container-col container-twice">
+                <div class="column column-txt">
+                    <div class="title mb20">
+                        <div class="h4 mb5">議題八</div>
+                        <div class="h3 font-weight-500"><span>生活新境界─</span><span>疫後服務新樣貌</span></div>
+                        </div>
+                    <div class="content">
+                        <p class="my0 pb-d-20">
+                            一場疫情，改變人與人的相處模式，為傳統服務業帶來衝擊，卻也帶出服務樣貌的全新想像。從消費、金融、旅遊，到人流與物流，後疫情時代，哪些服務更能被消費者買單？看似逆境中，企業又該如何找到有利條件開創服務新體驗？
+                        </p>
+                        <button class="btn mb-d-40 mb-m-20">
+                            <span>查看講者</span>
+                            <i class="icon icon-chevron-down"></i>
+                        </button>
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="column column-img">
+                    <div class="img">
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="agenda agenda-9">
+            <div class="container container-md">
+                <div class="title ml-auto mr-auto mb20">
+                    <div class="h4 mb5">議題九</div>
+                    <div class="h3 font-weight-500">永續新境界─發現企業永續新價值</div>
+                </div>
+                <div class="content text-d-center">
+                    <p class="my0">
+                        ESG堪稱企業與投資人疫後最關注的三個英文字母，在與地球共生共好的趨勢下，企業該如何尋求兼顧環境、社會、公司治理的新經營與成長策略？面對被疫情喚醒的永續倡議，企業又該如何擺脫舊有思惟與包袱，踏出漂亮的永續步伐？
+                    </p>
+                    <button class="btn mt20 mb-d-40 mb-m-20">
+                        <span>查看講者</span>
+                        <i class="icon icon-chevron-down"></i>
+                    </button>
+                    <img src="assets/images/opening.png" width="100%" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="agenda agenda-10">
+            <div class="container container-md container-col">
+                <div class="column column-txt">
+                    <div class="title mb20">
+                        <div class="h4 mb5">議題十</div>
+                        <div class="h3 font-weight-500">天下40週年─拉升序幕</div>
+                    </div>
+                    <div class="content">
+                        <p class="my0">
+                            隨著5G正式開台，各式5G應用也陸續開展。對個人的生活來說，5G應用的成熟不僅改變日常，甚至改變社會；對企業的經營而言，如何在5G快速普及的過程中，搶先佈局更是當前要務。究竟，在這場沒有人可以置身事外的科技大潮中，有哪些重點須掌握？而新的變革又帶來哪些新機遇？
+                        </p>
+                        <button class="btn mt20 mb-d-40 mb-m-20">
+                            <span>查看講者</span>
+                            <i class="icon icon-chevron-down"></i>
+                        </button>
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="column column-img">
+                    <div class="img">
+                        <img src="assets/images/opening.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="file" class="file">
+        <div class="container container-md">
+            <div class="title ml-auto mr-auto mb-d-30 mb-m-20 serif">
+                <div class="zh font-weight-600">議程下載</div>
+                <div class="en font-weight-500 ml10">AGENDA FILE</div>
+            </div>
+            <div class="online">
+                <iframe allowfullscreen allow="fullscreen" src="https://e.issuu.com/anonymous-embed.html?u=cwpmcenter&d=0824_____" width="100%" frameborder="0"></iframe>
+            </div>
+            <a href="#!" class="btn mt20" download>議程下載</a>
+            <h3 class="mt30 mb0 serif">主辦單位</h3>
+            <ul class="img-group">
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/arch" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/nature" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/people" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/tech" width="100%" alt="logo">
+                    </a>
+                </li>
+            </ul>
+            <h3 class="mt30 mb0 serif">贊助單位</h3>
+            <ul class="img-group">
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/tech" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/people" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/arch" width="100%" alt="logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="essence" class="essence">
+        <div class="container">
+            <div class="title ml-auto mr-auto mb-d-30 mb-m-20 serif">
+                <div class="zh font-weight-600">歷年講者精華</div>
+                <div class="en font-weight-500 ml10">ESSENCE</div>
+            </div>
+            <div class="slider-center">
+                <div>
+                    <div class="player">
+                        <img src="assets/images/essence/1.jpg" width="100%" alt="龍應台">
+                        <i class="icon icon-play-circle"></i>
+                    </div>
+                    <h3 class="mt20 mb0 text-center">龍應台／作家</h3>
+                </div>
+                <div>
+                    <div class="player">
+                        <img src="assets/images/essence/2.jpg" width="100%" alt="張忠謀">
+                        <i class="icon icon-play-circle"></i>
+                    </div>
+                    <h3 class="mt20 mb0 text-center">張忠謀／台積電創辦人</h3>
+                </div>
+                <div>
+                    <div class="player">
+                        <img src="assets/images/essence/3.jpg" width="100%" alt="石黑浩">
+                        <i class="icon icon-play-circle"></i>
+                    </div>
+                    <h3 class="mt20 mb0 text-center">石黑浩／日本大阪大學知能創成工學講座教授，日本機器人之父</h3>
+                </div>
+                <div>
+                    <div class="player">
+                        <img src="assets/images/essence/4.jpg" width="100%" alt="馬維英">
+                        <i class="icon icon-play-circle"></i>
+                    </div>
+                    <h3 class="mt20 mb0 text-center">馬維英／前微軟亞洲研究院院長</h3>
+                </div>
+                <div>
+                    <div class="player">
+                        <img src="assets/images/essence/5.jpg" width="100%" alt="謝健南">
+                        <i class="icon icon-play-circle"></i>
+                    </div>
+                    <h3 class="mt20 mb0 text-center">謝健南／全聯實業副董事長</h3>
+                </div>
+                <div>
+                    <div class="player">
+                        <img src="assets/images/essence/6.jpg" width="100%" alt="羅申駿">
+                        <i class="icon icon-play-circle"></i>
+                    </div>
+                    <h3 class="mt20 mb0 text-center">羅申駿／JL DESIGN 創辦人</h3>
+                </div>
+                <div>
+                    <div class="player">
+                        <img src="assets/images/essence/7.jpg" width="100%" alt="黃勝堅">
+                        <i class="icon icon-play-circle"></i>
+                    </div>
+                    <h3 class="mt20 mb0 text-center">黃勝堅／台北市立聯合醫院總院長</h3>
+                </div>
+            </div>              
+        </div>
+    </section>
+    <div id="register">
+        <section class="register">
+            <div class="container">
+                <div class="title ml-auto mr-auto mb-d-30 mb-m-20 serif">
+                    <div class="zh font-weight-600">購票</div>
+                    <div class="en font-weight-500 ml10">REGISTER</div>
+                </div>
+                <div class="content">
+                    <div class="h3 mb10">企業專屬方案請洽 (02)2507-8627#284 章先生</div>
+                    <div class="content-table">
+                        <table width="1100" border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <td width="500" rowspan="2">票券權益說明</td>
+                                    <td width="400" colspan="2">實體方案</td>
+                                    <td width="200">線上方案</td>
+                                </tr>
+                                <tr>
+                                    <td width="200">單席入場</td>
+                                    <td width="200">雙席入場</td>
+                                    <td>二日票</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2021天下經濟論壇／實體票券（含午餐）</td>
+                                    <td><i class="icon icon-check"></i></td>
+                                    <td><i class="icon icon-check"></i></td>
+                                    <td><i class="icon icon-x"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>2021天下經濟論壇／線上帳號（不含午餐）</td>
+                                    <td><i class="icon icon-x"></i></td>
+                                    <td><i class="icon icon-x"></i></td>
+                                    <td><i class="icon icon-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>2021全球大趨勢論壇入場一席+2021全球大趨勢特刊一本</td>
+                                    <td><i class="icon icon-check"></i></td>
+                                    <td><i class="icon icon-check"></i></td>
+                                    <td><i class="icon icon-x"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>《天下雜誌》1年25期</td>
+                                    <td><i class="icon icon-check"></i></td>
+                                    <td><i class="icon icon-check"></i></td>
+                                    <td><i class="icon icon-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>天下全閱讀1年權益</td>
+                                    <td><i class="icon icon-check"></i></td>
+                                    <td><i class="icon icon-check"></i></td>
+                                    <td><i class="icon icon-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-500">優惠價</td>
+                                    <td class="serif font-weight-700">15,000元</td>
+                                    <td class="serif font-weight-700">27,000元</td>
+                                    <td class="serif font-weight-700">9,999元</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a href="#!" class="btn">我要購票</a></td>
+                                    <td><a href="#!" class="btn">我要購票</a></td>
+                                    <td><a href="#!" class="btn">我要購票</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="addr py0">
+            <div class="text">
+                <h3 class="mt0 mb10 serif">活動資訊</h3>
+                <p>
+                    2021年1月19、20日（二、三）<br/>
+                    台北君悅酒店<br/>
+                    台北市信義區松壽路2號
+                </p>
+                <h3 class="mt40 mb10 serif">交通方式</h3>
+                <ul>
+                    <li>
+                        <div class="title mb10">捷運</div>
+                        <ul>
+                            <li>淡水信義線 (R) – 台北101/世貿站 – 5號出口</li>
+                            <li>板南線 (BL) – 市政府 – 2號出口</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14459.851338766788!2d121.5627762!3d25.0353353!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44cef53b99be635a!2z5Y-w5YyX5ZCb5oKF6YWS5bqX!5e0!3m2!1szh-TW!2stw!4v1605371780445!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+    </div>
+    <section id="sponsor" class="sponsor">
+        <div class="container">
+            <div class="title mb30 serif">
+                <div class="zh font-weight-600">共同推動</div>
+                <div class="en font-weight-500 ml10">SPONSOR</div>
+            </div>
+            <h3 class="mt30 mb0 serif">主辦單位</h3>
+            <ul class="img-group">
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/arch" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/nature" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/people" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/tech" width="100%" alt="logo">
+                    </a>
+                </li>
+            </ul>
+            <h3 class="mt30 mb0 serif">贊助單位</h3>
+            <ul class="img-group">
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/tech" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/people" width="100%" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <img src="https://placeimg.com/300/100/arch" width="100%" alt="logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <span>
+                <span>讀者服務專線：886-2-2662-0332</span>
+                <span>傳真電話：886-2-2662-6048</span>
+            </span>
+            <span>
+                <span>服務時間：週一～週五 09:00~17:30</span>
+                <span>台北市 104 南京東路二段 139 號 11 樓</span>
+            </span>
+            <span>
+                <span>Copyright © 2021天下雜誌</span>
+            </span>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/style.js"></script>
 </body>
 
