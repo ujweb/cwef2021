@@ -16,8 +16,17 @@ section {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-    h3 {
+    h3, .h3 {
         font-size: 1.375rem;
+    }
+    h4, .h4 {
+        font-size: 1.125rem;
+        a {
+            color: $black;
+            &:hover {
+                color: $orange;
+            }
+        }
     }
 	.title {
 		display: table;
@@ -55,7 +64,10 @@ section {
 		font-size: 1.875rem;
 	}
     &.about {
-		background-color: $white;
+        background-color: $white;
+        p {
+            font-size: 1.125rem;
+        }
 	}
 	&.about-detail {
 		background-image: url('../images/about-bg.jpg');
@@ -113,8 +125,38 @@ section {
 		}
 	}
 	&.agenda {
-		border-bottom: 1px solid $gray-300;
-		background-color: $white;
+		border-bottom: 1px solid $gray-400;
+        background-color: $white;
+        .content {
+            p {
+                font-size: 1.125rem;
+            }
+            button {
+                padding: 14px 18px 14px 22px;
+                color: $black;
+                font-size: 0;
+                background-color: $orange;
+                border: 0;
+                outline: 0;
+                > * {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 1rem;
+                    line-height: 1;
+                }
+                i.icon {
+                    margin-left: 5px;
+                }
+                &:hover {
+                    background-color: $yellow;
+                }
+                &.active {
+                    i.icon {
+                        @include rotate(180deg);
+                    }
+                }
+            }
+        }
 		.container-col {
 			display: flex;
             justify-content: space-between;
@@ -123,7 +165,7 @@ section {
 			}
 			img {
 				display: block;
-			}
+            }
 			.column-txt {
 				position: relative;
 				width: 100%;
@@ -180,29 +222,7 @@ section {
 				}
 			}
         }
-        p {
-            font-size: 1.125rem;
-        }
-        button {
-			padding: 14px 18px 14px 22px;
-			color: $black;
-			font-size: 0;
-			background-color: $orange;
-			border: 0;
-			> * {
-				display: inline-block;
-				vertical-align: middle;
-				font-size: 1rem;
-				line-height: 1;
-			}
-			i.icon {
-				margin-left: 5px;
-			}
-			&:hover {
-				background-color: $yellow;
-			}
-		}
-	}
+    }
 	&.file, &.sponsor {
         background-color: $white;
         .online {
@@ -222,6 +242,8 @@ section {
             @include breakpoint(1024px) {
                 width: 100%;
                 height: 680px;
+                margin-left: 0;
+                margin-right: 0;
             }
             iframe {
                 position: absolute;
@@ -461,7 +483,7 @@ section {
                             }
                         }
                         &:nth-child(odd) {
-                            background-color: $gray-400;
+                            background-color: $gray-500;
                         }
                         &:nth-last-child(2) {
                             td {
@@ -530,4 +552,75 @@ section {
             }
         }
 	}
+}
+.speaker {
+    display: none;
+    position: relative;
+	padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 0;
+    background-color: $gray-500;
+	z-index: 1;
+    @include breakpoint(1024px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .speaker-item {
+        @include breakpoint(1024px) {
+            display: inline-block;
+            vertical-align: top;
+            width: 25%;
+        }
+        @include breakpoint(max-width 1023px) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            + .speaker-item {
+                margin-top: 30px;
+            }
+            .speaker-txt {
+                width: calc(100% - 90px);
+            }
+        }
+    }
+    img {
+        display: block;
+        width: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        @include border-radius(50%);
+        @include breakpoint(1024px) {
+            width: 120px;
+        }
+    }
+    h3, .h3 {
+        font-size: 1.375rem;
+        @include breakpoint(max-width 1023px) {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    p {
+        font-size: 1rem;
+        @include breakpoint(1024px) {
+            min-height: 3em;
+            line-height: 1.5;
+        }
+        span {
+            display: inline-block;
+        }
+    }
+    button {
+        padding: 11px 34px;
+        color: $gray-200;
+        font-size: 1rem;
+        line-height: 1;
+        background-color: $white;
+        border: 1px solid $gray-200;
+        &:hover {
+            color: $orange;
+            border-color: $orange;
+        }
+    }
 }

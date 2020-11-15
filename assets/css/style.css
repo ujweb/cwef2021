@@ -1809,8 +1809,17 @@ section {
     padding-bottom: 80px;
   }
 }
-section h3 {
+section h3, section .h3 {
   font-size: 1.375rem;
+}
+section h4, section .h4 {
+  font-size: 1.125rem;
+}
+section h4 a, section .h4 a {
+  color: #000;
+}
+section h4 a:hover, section .h4 a:hover {
+  color: #ffa500;
 }
 section .title {
   display: table;
@@ -1830,7 +1839,7 @@ section .title div.zh {
   }
 }
 section .title div.en {
-  color: #bbb;
+  color: #a0a0a0;
   font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
@@ -1853,6 +1862,9 @@ section .subtitle {
 }
 section.about {
   background-color: #fff;
+}
+section.about p {
+  font-size: 1.125rem;
 }
 section.about-detail {
   background-image: url("../images/about-bg.jpg");
@@ -1923,8 +1935,37 @@ section.about-detail .detail-group .detail-item.detail-item-sp {
   padding: 50px 30px;
 }
 section.agenda {
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid #ddd;
   background-color: #fff;
+}
+section.agenda .content p {
+  font-size: 1.125rem;
+}
+section.agenda .content button {
+  padding: 14px 18px 14px 22px;
+  color: #000;
+  font-size: 0;
+  background-color: #ffa500;
+  border: 0;
+  outline: 0;
+}
+section.agenda .content button > * {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1rem;
+  line-height: 1;
+}
+section.agenda .content button i.icon {
+  margin-left: 5px;
+}
+section.agenda .content button:hover {
+  background-color: #ffcc00;
+}
+section.agenda .content button.active i.icon {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 section.agenda .container-col {
   display: flex;
@@ -1995,28 +2036,6 @@ section.agenda .container-col .column-img .img img {
 section.agenda .container-col.container-twice .column-txt img {
   width: 100%;
 }
-section.agenda p {
-  font-size: 1.125rem;
-}
-section.agenda button {
-  padding: 14px 18px 14px 22px;
-  color: #000;
-  font-size: 0;
-  background-color: #ffa500;
-  border: 0;
-}
-section.agenda button > * {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 1rem;
-  line-height: 1;
-}
-section.agenda button i.icon {
-  margin-left: 5px;
-}
-section.agenda button:hover {
-  background-color: #ffcc00;
-}
 section.file, section.sponsor {
   background-color: #fff;
 }
@@ -2043,6 +2062,8 @@ section.file .online, section.sponsor .online {
   section.file .online, section.sponsor .online {
     width: 100%;
     height: 680px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 section.file .online iframe, section.sponsor .online iframe {
@@ -2394,6 +2415,90 @@ section.addr .text > ul ul {
 section.addr .map iframe {
   width: 100%;
   height: 100%;
+}
+
+.speaker {
+  display: none;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 0;
+  background-color: #f0f0f0;
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  .speaker {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .speaker .speaker-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+  }
+}
+@media (max-width: 1023px) {
+  .speaker .speaker-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .speaker .speaker-item + .speaker-item {
+    margin-top: 30px;
+  }
+  .speaker .speaker-item .speaker-txt {
+    width: calc(100% - 90px);
+  }
+}
+.speaker img {
+  display: block;
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+@media (min-width: 1024px) {
+  .speaker img {
+    width: 120px;
+  }
+}
+.speaker h3, .speaker .h3 {
+  font-size: 1.375rem;
+}
+@media (max-width: 1023px) {
+  .speaker h3, .speaker .h3 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.speaker p {
+  font-size: 1rem;
+}
+@media (min-width: 1024px) {
+  .speaker p {
+    min-height: 3em;
+    line-height: 1.5;
+  }
+}
+.speaker p span {
+  display: inline-block;
+}
+.speaker button {
+  padding: 11px 34px;
+  color: #a0a0a0;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: #fff;
+  border: 1px solid #a0a0a0;
+}
+.speaker button:hover {
+  color: #ffa500;
+  border-color: #ffa500;
 }
 
 /*# sourceMappingURL=style.css.map */

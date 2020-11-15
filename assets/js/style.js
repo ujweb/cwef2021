@@ -59,6 +59,19 @@ $(function () {
 			}
 		]
 	});
+	$('.agenda .content button').each(function(){
+		let related = $(this).attr('data-relate');
+		$(this).click(function(){
+			let agendaTop =  $(this).parent('.content').parent('.column').parent('.container').parent('.agenda').offset().top,
+				agendaHeight = $(this).parent('.content').parent('.column').parent('.container').parent('.agenda').outerHeight(),
+				speakerTop = agendaTop + agendaHeight;
+			$(this).toggleClass('active');
+			$('.' + related).slideToggle();
+			$('html,body').animate({
+				scrollTop: speakerTop - (height / 3)
+			}, 1000);
+		});
+	});
 	$(window).on("scroll", function () {
 		var scroll = $(window).scrollTop();
 		if (scroll >= height / 3) {
