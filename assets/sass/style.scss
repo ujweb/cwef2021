@@ -350,6 +350,15 @@ section {
                 outline: 0;
                 padding-left: 35px;
                 padding-right: 35px;
+                &::before {
+                    @include beforeafter('', block);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 3;
+                }
                 @include breakpoint(1024px) {
                     padding-left: 15px;
                     padding-right: 15px;
@@ -366,10 +375,22 @@ section {
                         right: 0;
                         @include opacity(0.5);
                         @include transition(opacity 0.2s);
-                        z-index: 1;
+                        z-index: 2;
                         @include breakpoint(1024px) {
                             background-color: $black;
                         }    
+                    }
+                    img {
+                        position: relative;
+                        z-index: 1;
+                    }
+                    iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 0;
                     }
                     i.icon {
                         position: absolute;
@@ -392,7 +413,10 @@ section {
                 }
                 &.slick-center {
                     position: relative;
-                    z-index: 3;
+                    z-index: 4;
+                    &::before {
+                        display: none;
+                    }
                     .player {
                         margin-top: 0;
                         margin-bottom: 0;
@@ -409,6 +433,15 @@ section {
                         &:hover {
                             i.icon {
                                 @include opacity(1);
+                            }
+                        }
+                        &.playing {
+                            &::before {
+                                z-index: -1;
+                            }
+                            img, i.icon {
+                                @include opacity(0);
+                                z-index: -1;
                             }
                         }
                     }

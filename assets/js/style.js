@@ -73,6 +73,14 @@ $(function () {
 				}
 			}
 		]
+	}).on('afterChange', function(event, slick, currentSlide, nextSlide){
+		player01.pauseVideo();
+		player02.pauseVideo();
+		player03.pauseVideo();
+		player04.pauseVideo();
+		player05.pauseVideo();
+		player06.pauseVideo();
+		player07.pauseVideo();
 	});
 	$('.agenda .content button').each(function(){
 		let related = $(this).attr('data-relate');
@@ -87,6 +95,12 @@ $(function () {
 			}, 1000);
 		});
 	});
+	$('.player').each(function () {
+		var y2bId = $(this).attr('data-youtube');
+		$(this).click(function () {
+			$(this).addClass('playing');
+		})
+	})
 	$(window).on("scroll", function () {
 		var scroll = $(window).scrollTop();
 		if (scroll >= height / 3) {
@@ -96,3 +110,75 @@ $(function () {
 		}
 	});
 });
+
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player01, player02, player03, player04, player05, player06, player07;
+function onYouTubeIframeAPIReady() {
+	player01 = new YT.Player('youtube01', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: 'tom94M5VGN0',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
+	player02 = new YT.Player('youtube02', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: 'SLa45iSQEdw',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
+	player03 = new YT.Player('youtube03', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: '5xNX0YyAQC4',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
+	player04 = new YT.Player('youtube04', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: 'hiN3oDczEww',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
+	player05 = new YT.Player('youtube05', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: 'fZZaz3LSocU',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
+	player06 = new YT.Player('youtube06', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: 'FHJEVkUjDF0',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
+	player07 = new YT.Player('youtube07', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: 'KNZ3Fpd1R4o',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
+}
+function play01() { 
+	player01.playVideo();
+}
+function play02() { 
+	player02.playVideo();
+}
+function play03() { 
+	player03.playVideo();
+}
+function play04() { 
+	player04.playVideo();
+}
+function play05() { 
+	player05.playVideo();
+}
+function play06() { 
+	player06.playVideo();
+}
+function play07() { 
+	player07.playVideo();
+}

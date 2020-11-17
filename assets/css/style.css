@@ -2183,6 +2183,16 @@ section.essence .slider-center .slick-slide {
   padding-left: 35px;
   padding-right: 35px;
 }
+section.essence .slider-center .slick-slide::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
 @media (min-width: 1024px) {
   section.essence .slider-center .slick-slide {
     padding-left: 15px;
@@ -2210,12 +2220,24 @@ section.essence .slider-center .slick-slide .player::before {
   -o-transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  z-index: 1;
+  z-index: 2;
 }
 @media (min-width: 1024px) {
   section.essence .slider-center .slick-slide .player::before {
     background-color: #000;
   }
+}
+section.essence .slider-center .slick-slide .player img {
+  position: relative;
+  z-index: 1;
+}
+section.essence .slider-center .slick-slide .player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 section.essence .slider-center .slick-slide .player i.icon {
   position: absolute;
@@ -2250,7 +2272,10 @@ section.essence .slider-center .slick-slide h3 {
 }
 section.essence .slider-center .slick-slide.slick-center {
   position: relative;
-  z-index: 3;
+  z-index: 4;
+}
+section.essence .slider-center .slick-slide.slick-center::before {
+  display: none;
 }
 section.essence .slider-center .slick-slide.slick-center .player {
   margin-top: 0;
@@ -2276,6 +2301,14 @@ section.essence .slider-center .slick-slide.slick-center .player i.icon {
 section.essence .slider-center .slick-slide.slick-center .player:hover i.icon {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
+}
+section.essence .slider-center .slick-slide.slick-center .player.playing::before {
+  z-index: -1;
+}
+section.essence .slider-center .slick-slide.slick-center .player.playing img, section.essence .slider-center .slick-slide.slick-center .player.playing i.icon {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  z-index: -1;
 }
 section.essence .slider-center .slick-slide.slick-center h3 {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
