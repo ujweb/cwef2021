@@ -60,8 +60,7 @@ $(function () {
 	$('.slider-center').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 6000,
+		autoplay: false,
 		centerMode: true,
 		centerPadding: '0',
 		prevArrow: '<button type="button" class="slick-prev"><i class="icon icon-chevron-left"></i></button>',
