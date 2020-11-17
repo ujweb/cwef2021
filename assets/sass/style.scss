@@ -295,11 +295,11 @@ section {
 		}
 	}
 	&.essence {
-        .title {
-            .zh {
-                color: $white;
-            }
-        }
+        // .title {
+        //     .zh {
+        //         color: $white;
+        //     }
+        // }
         .slider-center {
             @include breakpoint(1024px) {
                 padding-top: 6.8%;

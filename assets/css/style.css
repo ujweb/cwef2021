@@ -2123,9 +2123,6 @@ section.file a.btn:hover, section.sponsor a.btn:hover {
     margin-right: auto;
   }
 }
-section.essence .title .zh {
-  color: #fff;
-}
 @media (min-width: 1024px) {
   section.essence .slider-center {
     padding-top: 6.8%;
