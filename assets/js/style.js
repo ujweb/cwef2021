@@ -81,6 +81,7 @@ $(function () {
 		player05.pauseVideo();
 		player06.pauseVideo();
 		player07.pauseVideo();
+		$('.player').removeClass('playing');
 	});
 	$('.agenda .content button').each(function(){
 		let related = $(this).attr('data-relate');
