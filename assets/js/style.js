@@ -117,7 +117,7 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player01, player02, player03, player04, player05, player06, player07;
+var player01, player02, player03, player04, player05, player06, player07, player08, player09, player10;
 function onYouTubeIframeAPIReady() {
 	player01 = new YT.Player('youtube01', {
 		fitToBackground: true,
@@ -161,6 +161,24 @@ function onYouTubeIframeAPIReady() {
 		videoId: 'KNZ3Fpd1R4o',
 		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
 	});
+	player08 = new YT.Player('youtube08', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: '70TyzqU3bkI',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
+	player09 = new YT.Player('youtube09', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: '9FCpi-DoV30',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
+	player10 = new YT.Player('youtube10', {
+		fitToBackground: true,
+		width: '100%',
+		videoId: 'NZ5XdG6vr0s',
+		playerVars: { 'playsinline': 1, 'rel': 0, 'showinfo': 0 },
+	});
 }
 function play01() { 
 	player01.playVideo();
@@ -182,4 +200,13 @@ function play06() {
 }
 function play07() { 
 	player07.playVideo();
+}
+function play08() { 
+	player08.playVideo();
+}
+function play09() { 
+	player09.playVideo();
+}
+function play10() { 
+	player10.playVideo();
 }
