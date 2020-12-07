@@ -2104,7 +2104,7 @@ section.file .img-group li img, section.sponsor .img-group li img {
 }
 @media (min-width: 535px) {
   section.file .img-group li img, section.sponsor .img-group li img {
-    width: 150px;
+    width: 180px;
   }
 }
 section.file a.btn, section.sponsor a.btn {
