@@ -55,7 +55,7 @@ $(function () {
 			columnImg = $(this).children('.column-img'),
 			columnImgHeight = columnImg.outerHeight();
 		columnImg.css('padding-top', phraseHeight);
-		columnImg.children('.img').height(columnImgHeight-phraseHeight);
+		// columnImg.children('.img').height(columnImgHeight-phraseHeight);
 	});
 	$('.slider-center').slick({
 		slidesToShow: 3,
