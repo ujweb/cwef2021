@@ -2104,7 +2104,7 @@ section.file .img-group li img, section.sponsor .img-group li img {
 }
 @media (min-width: 535px) {
   section.file .img-group li img, section.sponsor .img-group li img {
-    width: 180px;
+    width: 150px;
   }
 }
 section.file a.btn, section.sponsor a.btn {
@@ -2340,6 +2340,11 @@ section.register .content-table table td a.btn {
 section.register .content-table table td a.btn:hover {
   background-color: #ffcc00;
 }
+section.register .content-table table td a.btn.disabled {
+  color: #c4c4c4;
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
 section.register .content-table table thead {
   color: #fff;
   background-color: #004164;
@@ -2467,6 +2472,8 @@ section.addr .map iframe {
     display: inline-block;
     vertical-align: top;
     width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 1023px) {
