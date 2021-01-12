@@ -608,6 +608,11 @@ section {
             display: inline-block;
             vertical-align: top;
             width: 25%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include breakpoint(1200px) {
+            width: 20%;
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -623,6 +628,13 @@ section {
                 width: calc(100% - 90px);
             }
         }
+    }
+    .container-xl {
+        .speaker-item {
+            @include breakpoint(1024px) {
+                width: 20%;
+            }
+        }    
     }
     img {
         display: block;
@@ -658,9 +670,11 @@ section {
         line-height: 1;
         background-color: $white;
         border: 1px solid $gray-200;
+        outline: 0;
         &:hover {
             color: $orange;
             border-color: $orange;
         }
     }
 }
+@import "_message";

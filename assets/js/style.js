@@ -99,6 +99,31 @@ $(function () {
 			}, 1000);
 		});
 	});
+	$(".speaker-more").click(function() {
+        var speakerName = $(this).data('name'),
+			speaker = "";
+        for (var i = 0; i < data.length; i++) {
+            if (speakerName == data[i]["nameZh"]) {
+                speaker += '<img class="message-img" src="assets/images/speaker/' + data[i]["img"];
+                speaker += '" alt="' + data[i]["nameZh"];
+                speaker += '"><div class="message-name serif font-weight-700 text-center">' + data[i]["nameZh"];
+                speaker += '</div><div class="message-name serif font-weight-700 text-center">' + data[i]["nameEn"];
+                speaker += '</div><div class="message-title text-center">' + data[i]["titleZh"];
+                speaker += '</div><div class="message-title text-center">' + data[i]["titleEn"];
+                speaker += '</div><div class="message-essay">' + data[i]["intro"];
+                speaker += '</div>'
+            }
+        }
+        $('.message-content').html(speaker);
+		$('.message').fadeIn();
+        return false;
+    });
+    $('.message-content').click(function(e) {
+        e.stopPropagation();
+    })
+    $('.message').click(function() {
+        $('.message').fadeOut();;
+    })
 	$('.player').each(function () {
 		var y2bId = $(this).attr('data-youtube');
 		$(this).click(function () {

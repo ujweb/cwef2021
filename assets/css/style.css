@@ -1533,7 +1533,7 @@ img {
   }
 }
 @media (min-width: 1024px) {
-  .container {
+  .container:not(.container-lg) {
     max-width: 900px;
     padding-left: 20px;
     padding-right: 20px;
@@ -2472,6 +2472,13 @@ section.addr .map iframe {
     display: inline-block;
     vertical-align: top;
     width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .speaker .speaker-item {
+    width: 20%;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -2488,6 +2495,11 @@ section.addr .map iframe {
   }
   .speaker .speaker-item .speaker-txt {
     width: calc(100% - 90px);
+  }
+}
+@media (min-width: 1024px) {
+  .speaker .container-xl .speaker-item {
+    width: 20%;
   }
 }
 .speaker img {
@@ -2532,10 +2544,80 @@ section.addr .map iframe {
   line-height: 1;
   background-color: #fff;
   border: 1px solid #a0a0a0;
+  outline: 0;
 }
 .speaker button:hover {
   color: #ffa500;
   border-color: #ffa500;
+}
+
+.message {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden scroll;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.message .message-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 40px);
+  max-width: 550px;
+  min-height: calc(100% - (20px * 2));
+  margin: 20px auto;
+}
+.message .message-container {
+  position: relative;
+  padding: 30px 20px 40px;
+  background-color: #fff;
+}
+@media (min-width: 1024px) {
+  .message .message-container {
+    padding: 30px 60px 40px;
+  }
+}
+.message img.message-img {
+  width: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+@media (min-width: 1024px) {
+  .message img.message-img {
+    width: 150px;
+  }
+}
+.message .message-close {
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  line-height: 0;
+  cursor: pointer;
+}
+.message .message-name {
+  margin-top: 20px;
+  font-size: 1.25rem;
+}
+.message .message-name + .message-name {
+  margin-top: 0;
+}
+.message .message-title {
+  margin-top: 10px;
+}
+.message .message-title + .message-title {
+  margin-top: 0;
+}
+.message .message-essay {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
