@@ -1,36 +1,9 @@
 .opening {
 	position: relative;
-	min-height: 100%;
-	height: 100%;
-	&::before {
-		@include beforeafter('', block);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		// background-color: $black;
-		// @include opacity(0.2);
-		z-index: 1;
-	}
-	video {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		z-index: 0;
-	}
 	.container {
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
-		min-height: 100%;
-		height: 100%;
-		align-content: center;
-		justify-content: center;
-		z-index: 2;
 		> * {
 			color: $white;
 			text-align: center;
@@ -45,24 +18,6 @@
 				margin-right: auto;
 			}
 		}
-		> .text {
-			display: flex;
-			flex-wrap: wrap;
-			width: 100%;
-			align-content: center;
-			justify-content: center;
-			> h2 {
-				margin-left: 7.5px;
-				margin-right: 7.5px;
-				font-size: 1.375rem;
-				line-height: 1;
-				@include breakpoint(1024px) {
-					margin-left: 10px;
-					margin-right: 10px;
-					font-size: 1.875rem;
-                }
-			}
-		}
 		> a.btn {
 			display: table;
 			padding: 10px 30px;
@@ -74,4 +29,93 @@
 			}
 		}
 	}
+}
+
+.index-page {
+	.opening {
+		min-height: 100%;
+		height: 100%;
+		&::before {
+			@include beforeafter('', block);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			// background-color: $black;
+			// @include opacity(0.2);
+			z-index: 1;
+		}
+		video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: 0;
+		}
+		.container {
+			align-content: center;
+			justify-content: center;
+			min-height: 100%;
+			height: 100%;
+			z-index: 2;
+			> .text {
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				align-content: center;
+				justify-content: center;
+				> h2 {
+					margin-left: 7.5px;
+					margin-right: 7.5px;
+					font-size: 1.375rem;
+					line-height: 1;
+					@include breakpoint(1024px) {
+						margin-left: 10px;
+						margin-right: 10px;
+						font-size: 1.875rem;
+					}
+				}
+			}
+		}	
+	}	
+}
+.inner-page {
+	.opening {
+		padding-top: 150px;
+		background-image: url('../images/opening.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		@include background-size(cover);
+		.container {
+			> .text {
+				display: inline-flex;
+				align-items: baseline;
+				position: relative;
+				padding-right: 2rem;
+				h1 {
+					color: $white;
+					font-size: 1.875rem;
+					@include breakpoint(1024px) {
+						font-size: 3.125rem;
+					}
+				}
+				h3 {
+					color: $gray-200;
+					font-size: 1.125rem;
+					@include breakpoint(1024px) {
+						font-size: 1.5rem;
+					}
+				}
+				img {
+					position: absolute;
+					top: -1.5rem;
+					right: 0;
+					width: 3rem;
+				}
+			}
+		}
+	}	
 }

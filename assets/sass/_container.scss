@@ -8,11 +8,11 @@
     @include breakpoint(375px) {
         max-width: calc(100% - 40px);
     }
-    @include breakpoint(1024px) {
+    @media screen and (min-width: 1024px) and (max-width: 1199px) {
+        padding-left: 20px;
+        padding-right: 20px;
         &:not(.container-lg) {
             max-width: 900px;
-            padding-left: 20px;
-            padding-right: 20px;
         }
     }
     @include breakpoint(1200px) {
