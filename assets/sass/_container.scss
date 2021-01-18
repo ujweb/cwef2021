@@ -23,6 +23,11 @@
             max-width: 900px;
         }
     }
+    &.container-sm {
+        @include breakpoint(768px) {
+            max-width: 400px;
+        }
+    }
 }
 .container-fluid {
     max-width: calc(100% - 30px);

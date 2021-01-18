@@ -112,8 +112,13 @@ nav {
                     &:hover {
                         background-color: $yellow;
                     }
+                    &.disabled {
+                        color: $gray-300;
+                        background-color: $gray-500;
+                        cursor: not-allowed;
+                    }
                 }
-            }        
+            }
         }
     }
 }

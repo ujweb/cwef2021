@@ -130,6 +130,12 @@ $(function () {
 			$(this).addClass('playing');
 		})
 	})
+	$('.input-inline i.icon').click(function(){
+		$(this).siblings('input').attr('type',
+			$(this).siblings('input').attr('type')==='password'?'text':'password'
+		);
+		$(this).toggleClass('icon-eyeon icon-eyeoff');
+	});
 	$(window).on("scroll", function () {
 		var scroll = $(window).scrollTop();
 		if (scroll >= height / 3) {

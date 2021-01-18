@@ -27,6 +27,11 @@
 			&:hover {
 				background-color: $yellow;
 			}
+			&.disabled {
+				color: $gray-300;
+				background-color: $gray-500;
+				cursor: not-allowed;
+			}
 		}
 	}
 }
@@ -85,19 +90,24 @@
 .inner-page {
 	.opening {
 		padding-top: 150px;
+		padding-bottom: 60px;
 		background-image: url('../images/opening.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		@include background-size(cover);
+		@include breakpoint(1024px) {
+			padding-top: 200px;
+			padding-bottom: 100px;
+		}
 		.container {
 			> .text {
 				display: inline-flex;
 				align-items: baseline;
 				position: relative;
-				padding-right: 2rem;
+				padding-right: 1.5rem;
 				h1 {
 					color: $white;
-					font-size: 1.875rem;
+					font-size: 2.5rem;
 					@include breakpoint(1024px) {
 						font-size: 3.125rem;
 					}
@@ -111,9 +121,9 @@
 				}
 				img {
 					position: absolute;
-					top: -1.5rem;
+					top: -0.5rem;
 					right: 0;
-					width: 3rem;
+					width: 2rem;
 				}
 			}
 		}
